@@ -52,7 +52,7 @@ $color-text: #3c4043;
     color: $c;
 }
 .header {
-    &__content-preheader {
+    .header__content-preheader {
         text-align: center;
         padding: 17px 0 22px;
         background: #1967d2;
@@ -69,18 +69,18 @@ $color-text: #3c4043;
             @include fontz(400, 16px, 137%, #fff)
         }     
     }
-    &__content-nav {
+    .header__content-nav {
         @extend .container;
         @extend .center;
         background: #fff;
         padding: 17px 0 14px;
-        &__menu-nav {
+        .header__menu-nav {
             @extend .center; 
             gap: 20px;   
-            &__nav-menu {
+            .header__nav-menu {
                 width: 644px;
                 @extend .center;
-                &__list-link {
+                .header__list-link {
                     font-family: $font-family;
                     @include fontz(400, 14px, 143%, $color-text);
                     transition: all 0.3s ease-in;
@@ -89,7 +89,7 @@ $color-text: #3c4043;
                     }
                 }
             }
-            &__nav-social {
+            .header__nav-social {
                 width: 168px;
                 @extend .center;
             }
@@ -104,10 +104,10 @@ $color-text: #3c4043;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    &__content {
+    .main__content {
         @extend .container;
     }
-    &__content-info {
+    .main__content-info {
         width: 334px;
         height: 260px;
         @extend .center;
@@ -135,7 +135,7 @@ $color-text: #3c4043;
 }
 .slaider {
     margin: 80px 0;
-    &__content-name {
+    .slider__content-name {
         @extend .text ;
         text-align: center;
         margin-bottom: 90px;
@@ -145,10 +145,10 @@ $color-text: #3c4043;
         overflow: hidden;
         padding-bottom: 112px;
         border-bottom: 2px solid $color-text;
-        &-wrapper {   
+        .swiper-wrapper {   
             max-width: 1240px;
             margin-left: auto;    
-            &-slide {
+            .swiper-slide {
                 width: 183px;
                 height: 298px; 
                 .slaider__body-img {
@@ -166,17 +166,17 @@ $color-text: #3c4043;
 }
 .about {
     @extend .container;
-    &__content {
+    .about__content {
         @extend .center;
         border-radius: 28px;
         background: #f8f9fa;
-        &__content-bg {
+        .about__content-bg {
             img {
                 object-fit: cover;
                 border-radius: 28px;
             }
         }
-        &__content-info {
+        .about__content-info {
             max-width: 390px;
             @extend .center;
             align-items: start;
@@ -203,9 +203,9 @@ $color-text: #3c4043;
 }
 .products {
     margin: 80px 0 24px;
-    &__content {
+    .products__content {
         @extend .container;
-        &-wrap {
+        .products__content-wrap {
             @extend .center;
             flex-wrap: wrap;
             .products__wrap-flex {
