@@ -1,17 +1,17 @@
 @import "nulstyle.css";
-.container, .about, .main .main__content, .header__content-nav {
+.container, .products__content, .about, .main__content, .header__content-nav {
   max-width: 1270px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.center, .about .about__content .about__content-info, .about .about__content, .main .main__content-info .main__info-button, .main .main__content-info, .header__menu-nav .header__nav-social, .header__menu-nav .header__nav-menu, .header__menu-nav, .header__content-nav, .header__content-preheader {
+.center, .products__content-wrap, .about__content__content-info, .about__content, .main__content-info .main__info-button, .main__content-info, .header__content-nav__menu-nav__nav-social, .header__content-nav__menu-nav__nav-menu, .header__content-nav__menu-nav, .header__content-nav, .header__content-preheader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.btn, .main .main__content-info .main__info-button .main__button-btn {
+.btn, .main__content-info .main__info-button .main__button-btn {
   padding: 8px 20px;
   border: 2px solid #3c4043;
   border-radius: 4px;
@@ -22,12 +22,12 @@
   color: #3c4043;
   transition: all 0.3s ease-in;
 }
-.btn:hover, .main .main__content-info .main__info-button .main__button-btn:hover {
+.btn:hover, .main__content-info .main__info-button .main__button-btn:hover {
   background: #3c4043;
   color: #fff;
 }
 
-.title, .about .about__content .about__content-info h2 {
+.title, .about__content__content-info h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -36,7 +36,7 @@
   color: #3c4043;
 }
 
-.text, .about .about__content .about__content-info a, .about .about__content .about__content-info p, .slaider .slider__content-name, .main .main__content-info .main__info-button p, .main .main__content-info p {
+.text, .about__content__content-info a, .about__content__content-info p, .slaider__content-name, .main__content-info .main__info-button p, .main__content-info p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -65,19 +65,17 @@
   line-height: 137%;
   color: #fff;
 }
-
 .header__content-nav {
   background: #fff;
   padding: 17px 0 14px;
 }
-
-.header__menu-nav {
+.header__content-nav__menu-nav {
   gap: 20px;
 }
-.header__menu-nav .header__nav-menu {
+.header__content-nav__menu-nav__nav-menu {
   width: 644px;
 }
-.header__menu-nav .header__nav-menu .header__list-link {
+.header__content-nav__menu-nav__nav-menu__list-link {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -85,10 +83,10 @@
   color: #3c4043;
   transition: all 0.3s ease-in;
 }
-.header__menu-nav .header__nav-menu .header__list-link:hover {
+.header__content-nav__menu-nav__nav-menu__list-link:hover {
   color: #1967d2;
 }
-.header__menu-nav .header__nav-social {
+.header__content-nav__menu-nav__nav-social {
   width: 168px;
 }
 
@@ -100,27 +98,27 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.main .main__content-info {
+.main__content-info {
   width: 334px;
   height: 260px;
   align-items: start;
   flex-direction: column;
   margin-top: 20%;
 }
-.main .main__content-info h1 {
+.main__content-info h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 57px;
   line-height: 119%;
   color: #3c4043;
 }
-.main .main__content-info .main__info-button {
+.main__content-info .main__info-button {
   gap: 26px;
 }
 .slaider {
   margin: 80px 0;
 }
-.slaider .slider__content-name {
+.slaider__content-name {
   text-align: center;
   margin-bottom: 90px;
 }
@@ -130,21 +128,21 @@
   padding-bottom: 112px;
   border-bottom: 2px solid #3c4043;
 }
-.slaider .swiper .swiper-wrapper {
+.slaider .swiper-wrapper {
   max-width: 1240px;
   margin-left: auto;
 }
-.slaider .swiper .swiper-wrapper .swiper-slide {
+.slaider .swiper-wrapper-slide {
   width: 183px;
   height: 298px;
 }
-.slaider .swiper .swiper-wrapper .swiper-slide .slaider__body-img {
+.slaider .swiper-wrapper-slide .slaider__body-img {
   width: 183px;
   height: 254px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.slaider .swiper .swiper-wrapper .swiper-slide p {
+.slaider .swiper-wrapper-slide p {
   margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
@@ -152,26 +150,67 @@
   color: #3c4043;
 }
 
-.about .about__content {
+.about__content {
   border-radius: 28px;
   background: #f8f9fa;
 }
-.about .about__content .about__content-bg img {
+.about__content__content-bg img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 28px;
 }
-.about .about__content .about__content-info {
+.about__content__content-info {
   max-width: 390px;
   align-items: start;
   flex-direction: column;
   height: 272px;
   margin: 0 auto;
 }
-.about .about__content .about__content-info a {
+.about__content__content-info a {
   color: #1967d2;
   transition: all 0.3s ease-in;
 }
-.about .about__content .about__content-info a:hover {
+.about__content__content-info a:hover {
+  color: #3c4043;
+}
+
+.products {
+  margin: 80px 0 24px;
+}
+.products__content-wrap {
+  flex-wrap: wrap;
+}
+.products__content-wrap .products__wrap-flex {
+  flex: 0 1 33%;
+  border-radius: 28px;
+  background: #e9e3db;
+}
+.products__content-wrap .products__wrap-flex .products__flex-info {
+  text-align: center;
+  padding: 20px 0 28px;
+}
+.products__content-wrap .products__wrap-flex .products__flex-info .products__info-subtitle {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3c4043;
+}
+.products__content-wrap .products__wrap-flex .products__flex-info .products__info-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  color: #3c4043;
+}
+.products__content-wrap .products__wrap-flex .products__flex-info .products__info-btn {
+  margin-top: 25px;
+  border: 2px solid #5f6368;
+  border-radius: 4px;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
   color: #3c4043;
 }/*# sourceMappingURL=style.css.map */
