@@ -1,0 +1,200 @@
+// файл обнуляющих стиле
+@import "nulstyle.css";
+
+$font-family: "Roboto", sans-serif;
+$color-text: #3c4043;
+// ---------
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    padding: 8px 20px;
+    border: 2px solid $color-text;
+    border-radius: 4px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-text;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background: $color-text; 
+        color: #fff;
+    }
+}
+.title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: $color-text;
+}
+.text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-text;
+}
+// ---------
+@mixin fontz($w, $f, $l, $c) {
+    font-weight: $w;
+    font-size: $f;
+    line-height: $l;
+    color: $c;
+}
+.header__content-preheader {
+    text-align: center;
+    padding: 17px 0 22px;
+    background: #1967d2;
+    @extend .center;
+    justify-content: center;
+    gap: 3px;
+    p {
+        font-family: $font-family;
+        @include fontz(400, 16px, 100%, #fff)
+
+    }
+    a {
+        font-family: $font-family;
+        @include fontz(400, 16px, 137%, #fff)
+    }
+}
+.header__content-nav {
+    @extend .container;
+    @extend .center;
+    background: #fff;
+    padding: 17px 0 14px;
+}
+.header__menu-nav {
+    @extend .center; 
+    gap: 20px;   
+    .header__nav-menu {
+        width: 644px;
+        @extend .center;
+        .header__list-link {
+            font-family: $font-family;
+            @include fontz(400, 14px, 143%, $color-text);
+            transition: all 0.3s ease-in;
+            &:hover {
+                color: #1967d2;
+            }
+        }
+    }
+    .header__nav-social {
+        width: 168px;
+        @extend .center;
+    }
+}
+.main {
+    overflow: hidden;
+    height: 100vh;
+    background-image: url(../images/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .main__content {
+        @extend .container;
+    }
+    .main__content-info {
+        width: 334px;
+        height: 260px;
+        @extend .center;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 20%;
+        h1 {
+            font-family: $font-family;
+            @include fontz(400, 57px, 119%, $color-text);
+        }
+        p {
+            @extend .text;
+        }
+        .main__info-button {
+            @extend .center;
+            gap: 26px;
+            .main__button-btn {
+                @extend .btn;
+            }
+            p {
+                @extend .text;
+            }
+        }
+    }
+}
+.slaider {
+    margin: 80px 0;
+    .slider__content-name {
+        @extend .text ;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    .swiper {
+        margin-left: 130px;
+        overflow: hidden;
+        padding-bottom: 112px;
+        border-bottom: 2px solid $color-text;
+        .swiper-wrapper {   
+            max-width: 1240px;
+            margin-left: auto;    
+            .swiper-slide {
+                width: 183px;
+                height: 298px; 
+                .slaider__body-img {
+                    width: 183px;
+                    height: 254px;
+                    object-fit: cover;
+                }
+                p {
+                    margin-top: 20px;
+                    @include fontz(400, 16px, 150%, $color-text)
+                }
+            }
+        }
+    }
+}
+.about {
+    @extend .container;
+    .about__content {
+        @extend .center;
+        border-radius: 28px;
+        background: #f8f9fa;
+        .about__content-bg {
+            img {
+                object-fit: cover;
+                border-radius: 28px;
+            }
+        }
+        .about__content-info {
+            max-width: 390px;
+            @extend .center;
+            align-items: start;
+            flex-direction: column;
+            height: 272px;
+            margin: 0 auto;
+            h2 {
+                @extend .title;
+            }
+            p {
+                @extend .text;
+            }
+        
+            a {
+                @extend .text; 
+                color: #1967d2;
+                transition: all 0.3s ease-in;
+                &:hover {
+                    color: $color-text;
+                }
+            }
+        }
+    }    
+}

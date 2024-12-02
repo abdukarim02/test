@@ -1,0 +1,177 @@
+@import "nulstyle.css";
+.container, .about, .main .main__content, .header__content-nav {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.center, .about .about__content .about__content-info, .about .about__content, .main .main__content-info .main__info-button, .main .main__content-info, .header__menu-nav .header__nav-social, .header__menu-nav .header__nav-menu, .header__menu-nav, .header__content-nav, .header__content-preheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn, .main .main__content-info .main__info-button .main__button-btn {
+  padding: 8px 20px;
+  border: 2px solid #3c4043;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3c4043;
+  transition: all 0.3s ease-in;
+}
+.btn:hover, .main .main__content-info .main__info-button .main__button-btn:hover {
+  background: #3c4043;
+  color: #fff;
+}
+
+.title, .about .about__content .about__content-info h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #3c4043;
+}
+
+.text, .about .about__content .about__content-info a, .about .about__content .about__content-info p, .slaider .slider__content-name, .main .main__content-info .main__info-button p, .main .main__content-info p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3c4043;
+}
+
+.header__content-preheader {
+  text-align: center;
+  padding: 17px 0 22px;
+  background: #1967d2;
+  justify-content: center;
+  gap: 3px;
+}
+.header__content-preheader p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+.header__content-preheader a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: #fff;
+}
+
+.header__content-nav {
+  background: #fff;
+  padding: 17px 0 14px;
+}
+
+.header__menu-nav {
+  gap: 20px;
+}
+.header__menu-nav .header__nav-menu {
+  width: 644px;
+}
+.header__menu-nav .header__nav-menu .header__list-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #3c4043;
+  transition: all 0.3s ease-in;
+}
+.header__menu-nav .header__nav-menu .header__list-link:hover {
+  color: #1967d2;
+}
+.header__menu-nav .header__nav-social {
+  width: 168px;
+}
+
+.main {
+  overflow: hidden;
+  height: 100vh;
+  background-image: url(../images/main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .main__content-info {
+  width: 334px;
+  height: 260px;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 20%;
+}
+.main .main__content-info h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 119%;
+  color: #3c4043;
+}
+.main .main__content-info .main__info-button {
+  gap: 26px;
+}
+.slaider {
+  margin: 80px 0;
+}
+.slaider .slider__content-name {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.slaider .swiper {
+  margin-left: 130px;
+  overflow: hidden;
+  padding-bottom: 112px;
+  border-bottom: 2px solid #3c4043;
+}
+.slaider .swiper .swiper-wrapper {
+  max-width: 1240px;
+  margin-left: auto;
+}
+.slaider .swiper .swiper-wrapper .swiper-slide {
+  width: 183px;
+  height: 298px;
+}
+.slaider .swiper .swiper-wrapper .swiper-slide .slaider__body-img {
+  width: 183px;
+  height: 254px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slaider .swiper .swiper-wrapper .swiper-slide p {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3c4043;
+}
+
+.about .about__content {
+  border-radius: 28px;
+  background: #f8f9fa;
+}
+.about .about__content .about__content-bg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 28px;
+}
+.about .about__content .about__content-info {
+  max-width: 390px;
+  align-items: start;
+  flex-direction: column;
+  height: 272px;
+  margin: 0 auto;
+}
+.about .about__content .about__content-info a {
+  color: #1967d2;
+  transition: all 0.3s ease-in;
+}
+.about .about__content .about__content-info a:hover {
+  color: #3c4043;
+}/*# sourceMappingURL=style.css.map */
